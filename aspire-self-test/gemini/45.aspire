@@ -1,0 +1,7 @@
+(let ((x 1))
+  (let ((make_adder (fun (y) 
+                      (fun (z) (+ x (+ y z)))))) ;; Captures x=1
+    (let ((add_10 (make_adder 10))) ;; Captures y=10
+      (let ((x 100)
+            (y 200))
+        (add_10 5)))))

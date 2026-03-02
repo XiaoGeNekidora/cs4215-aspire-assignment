@@ -1,0 +1,3 @@
+(let ((adder_maker (fun (x) (fun (y) (+ x y)))))
+  (let ((add10 (adder_maker 10)))
+    (add10 20)))

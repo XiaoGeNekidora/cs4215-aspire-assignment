@@ -1,0 +1,3 @@
+(let ((get_hidden (fun () hidden)))
+  (let ((hidden 999))
+    (get_hidden)))

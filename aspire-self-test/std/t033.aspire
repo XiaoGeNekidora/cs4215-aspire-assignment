@@ -1,0 +1,3 @@
+(let ((f (fun (x y) (+ x y)))
+      (f2 (fun (y z) (- y z))))
+  (f (f2 1 2) (f 3 4)))

@@ -1,0 +1,12 @@
+(let ((y (fun (proc)
+            ((fun (x)
+              (proc (fun (arg) ((x x) arg))))
+            (fun (x)
+              (proc (fun (arg) ((x x) arg))))))))
+  (let ((fact (fun (rec)
+                (fun (n)
+                (if0 n
+                  1
+                  (* n (rec (+ n -1))))))))
+    (let ((! (y fact)))
+      (! 5))))

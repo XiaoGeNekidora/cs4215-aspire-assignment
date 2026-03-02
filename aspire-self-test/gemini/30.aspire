@@ -1,0 +1,2 @@
+(let ((funfun 10) (if0not 20))
+  (+ funfun if0not))

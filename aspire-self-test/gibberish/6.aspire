@@ -1,0 +1,10 @@
+<expr> ::= <float>
+    | (+ <expr> <expr>)
+    | (- <expr> <expr>)
+    | (* <expr> <expr>)
+    | (/ <expr> <expr>)
+    | <id>
+    | (if0 <expr> <expr> <expr>)
+    | (let ((<id> <expr>) ...) <expr>)
+    | (fun (<id> ...) <expr>)
+    | (<expr> <expr> ...)

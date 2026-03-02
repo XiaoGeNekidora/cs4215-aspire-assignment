@@ -1,0 +1,3 @@
+(let ((runner (fun (g) (let ((x 100)) (g)))))
+  (let ((f (fun () x)))
+    (runner f)))

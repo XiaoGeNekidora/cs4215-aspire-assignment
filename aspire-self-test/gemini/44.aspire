@@ -1,0 +1,4 @@
+(let ((val 10))
+  (let ((helper (fun () val)))
+    (let ((f (fun (val) (helper)))) ;; arg 'val' shadows outer 'val' here, but NOT inside 'helper'
+      (f 999))))

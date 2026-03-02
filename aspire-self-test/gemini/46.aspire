@@ -1,0 +1,4 @@
+(let ((x 5))
+  (let ((process (fun (f x) (f)))) ;; Argument 'x' shadows literal 'x', but f ignores it
+    (let ((return_outer_x (fun () x)))
+      (process return_outer_x 1000))))
